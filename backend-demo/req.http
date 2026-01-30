@@ -1,0 +1,64 @@
+GET http://127.0.0.1:3000/user-api/users
+
+###
+
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"jyosna",
+    "age":20
+}
+###
+
+PUT http://127.0.0.1:3000/user-api/users/id 
+Content-Type: application/json
+
+{
+    "id":300,
+    "name":"sadiya",
+    "age":20
+}
+ 
+
+### Read a user by id
+GET http://127.0.0.1:3000/user-api/users/300
+
+###
+DELETE http://127.0.0.1:3000/user-api/users/300
+ 
+### 
+
+GET http://localhost:3000/product-api/products
+
+###
+POST http://localhost:3000/product-api/products 
+Content-Type: application/json
+
+{
+    "productId":2,
+    "name":"Laptop",
+    "price":20000,
+    "brand":"dell"
+}
+
+### modify product details
+PUT http://localhost:3000/product-api/products/id 
+Content-Type: application/json
+
+{
+     "productId":2,
+    "name":"Mouse",
+    "price":200,
+    "brand":"Lenovo"
+}
+
+### get product by id
+GET http://localhost:3000/product-api/products-id/3
+
+###
+DELETE http://localhost:3000/product-api/products-delete/3
+
+###
+GET http://localhost:3000/product-api/products-brand/dell
