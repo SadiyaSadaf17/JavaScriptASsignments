@@ -1,0 +1,62 @@
+GET http://localhost:3000/user-api/users
+
+
+### Create user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"sada",
+    "password":"sada",
+    "age":19
+}
+
+
+###read user by id
+GET http://localhost:3000/user-api/users/697dc770e882a6dd80065c4f
+
+
+### update user
+PUT http://localhost:3000/user-api/users/697f211510d59e2f6b9b6bbb
+Content-Type: application/json 
+
+{
+    "username":"ravi",
+    "password":"ravi",
+    "age":19
+}
+
+###Delete user by id
+DELETE http://localhost:3000/user-api/users/697dc770e882a6dd80065c4f     
+
+
+### get products 
+GET http://localhost:3000/product-api/products  
+
+### create product 
+POST http://localhost:3000/product-api/products   
+Content-Type: application/json  
+
+{
+    "productName":"mouse",
+    "price":3000
+}
+
+
+### get product by id 
+GET http://localhost:3000/product-api/products/697dd1139008597d930427ef   
+ 
+
+### update product
+
+PUT http://localhost:3000/product-api/products/697dd1139008597d930427ef   
+Content-Type: application/json 
+
+{
+    "productName":"bike",
+    "price":3000000
+}
+
+
+###Delete product by Id
+DELETE http://localhost:3000/product-api/products/697dd1139008597d930427ef
