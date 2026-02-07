@@ -10,7 +10,6 @@ Tasks:
    5. Print the message
 */
 
-
 let isLoggedIn=false;
 let isProfileComplete=true;
 if(!isLoggedIn){
